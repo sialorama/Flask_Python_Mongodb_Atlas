@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        h1{
+        width: 1400px;
+        padding-top: 100px;
+        padding-left: 350px;
+        color: #cce4ff;
+        position: -ms-page;
+        text-align: center;
+      }
+        h2{
+        font-size: 50px;
+        padding-top: 120px;
+        padding-bottom: 40px;
+        color: rgb(0, 214, 214);
+        padding-left: 120px;
+      }
+      
+      p{
+        padding-left: 150px;
+        font-size: 30px;
+        color: aliceblue;
+        text-align: center justify;
+        width: 750px;
+      }
+  
+    body{
+        background: url("{{url_for('static', filename='img/tortue.jpg')}}");
+        background-size:cover;
+
+    }
+
+      #logo{
+        margin-left: 50px;
+        width: 90px;
+        height:85px;
+      }
+
+      #intro{
+        width: 400px;
+        text-align: justify;
+      }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>{% block title %} Terre et Mer {% endblock %}</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <img id="logo" src="{{url_for('static', filename='img/logo.png')}}" />
+      <a class="nav-link" href="{{ url_for('main') }}">Home</a>
+      <a class="nav-link" href="{{ url_for('info') }}">A propos de nous</a>
+      <a class="nav-link" href="{{ url_for('form') }}">Faire un don</a>      
+      <a class="nav-link" href="{{ url_for('register') }}">S'enregistrer</a>
+
+      
+    </nav>
+
+      {% block content %} {% endblock %}
+</body>
+</html>
+    

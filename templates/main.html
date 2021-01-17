@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <style>
+        h1{
+        width: 980px;
+        padding-top: 50px;
+        padding-left: 100px;
+        color: #cce4ff;
+        text-align: center;
+      }
+        h2{
+        font-size: 35px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        color: rgb(0, 214, 214);
+        padding-left: 100px;
+      }
+      
+      p{
+        padding-left: 90px;
+        font-size: 20px;
+        color: aliceblue;
+        width: 700px;
+        text-align: justify;
+      }
+      #total{
+        padding-left: 35%;
+      }
+    </style>
+
+
+    <div>
+        <h1>AGIR TOUS ENSEMBLE, POUR TROUVER UN EQUILIBRE DURABLE ENTRE LA VIE MARINE ET LES ACTIVITES HUMAINES</h1>
+        <div>
+          <form id="total" action = "http://localhost:5000/result" method = "POST">
+          <input type = "submit" class="btn btn-primary" value = "Afficher le total des dons réalisés" />
+        </form>
+        </div>
+        <h2>Vision - Mission - Mode D'Action</h2>
+    </div>
+    <div id="intro">
+        <p>
+            PLANÈTE MER EST UNE ASSOCIATION D’INTÉRÊT GÉNÉRAL CRÉÉE EN 2007 PAR DEUX PASSIONNÉS DE LA MER, MATHIEU MAUVERNAY & LAURENT DEBAS. SA MISSION : AGIR TOUS ENSEMBLE, POUR RETROUVER UN ÉQUILIBRE DURABLE ENTRE LA VIE MARINE ET LES ACTIVITÉS HUMAINES. C’EST BIEN L’ENJEU DU 21E SIÈCLE : CONCILIER À LA FOIS RESPECT DES ÉQUILIBRES NATURELS FONDAMENTAUX ET DÉVELOPPEMENT ÉCONOMIQUE ET SOCIAL.
+        </p>
+    </div>
+    
+{% endblock %}

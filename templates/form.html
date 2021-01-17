@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title></title>
+  <style>
+        h1{
+        font-size: 50px;
+        width: 1200px;
+        padding-top: 100px;
+        padding-left: 150px;
+        padding-bottom: 80px;
+        color: rgb(0, 214, 214);
+        position: -ms-page;
+        text-align: center;
+        }
+    form{
+        padding-left: 150px;
+        padding-right: 70%;
+        color: #cce4ff;
+        font-size: 15px;
+    }
+    .form-group{
+      font-size: 15px;
+    }
+    
+</style>
+
+<h2>{% block text %} Aidez-nous à protéger la nature en faisant un don ! {% endblock %}</h2>
+
+<form action = "{{url_for('form')}}"" method ="post">
+  <div id="formulaire">
+      </div>
+
+      <div>
+          <label for="name">Nom:</label><br>
+          <input type="text" name="nom" ><br><br>
+      </div>
+      <div>
+        <label for="name">Prénom:</label><br>
+        <input type="text" name="prenom" ><br><br>
+    </div>
+      <div>
+          <label for="name">Addresse mail:</label><br>
+          <input type="email" name="mail" ><br><br>
+      </div>
+      <div>
+          <label for="name">Valeur du don:</label><br>
+          <input type="text" placeholder="En chiffre" name="valeur" ><br>
+      </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+          <label class="form-check-label" for="invalidCheck2" >
+            <small> En cochant cette case je reconnais avoir pris connaissances des conditions générales.</small>
+          </label>
+        </div>
+      </div>
+      <div><br>
+    <input type="submit" value="Valider" />
+      </div>
+
+
+</form>
+
+{% endblock %}

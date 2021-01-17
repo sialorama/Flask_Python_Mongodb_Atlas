@@ -1,0 +1,28 @@
+
+nav{
+    width: 200px;
+}
+h1{
+    padding-top: 30px;
+    color: #cce4ff;
+    position: -ms-page;
+    text-align: center;
+}
+h2{
+    color: rgb(0, 214, 214);
+}
+p{
+    color: aliceblue;
+    text-align: center justify;
+    width: 400px;
+}
+#intro{
+
+    width: 400px;
+    text-align: center;
+}
+#logo{
+    margin-left: 10px;
+    width: 90px;
+    height:85px;
+}
